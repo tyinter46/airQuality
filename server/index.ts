@@ -15,7 +15,7 @@ app.use('/api',  airQuality)
 const port = config.get('port')
 app.listen (port, ()=>{
   // console.log(`port is runninbg at ${port}`)
- postEveryMinute()
+ //postEveryMinute()
 
 connectToDb()
 })

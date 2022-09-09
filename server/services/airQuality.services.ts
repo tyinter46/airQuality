@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv'
 import config from 'config'
-import ResultModel from "../models/result.model"
+import ResultModel, { Result } from "../models/result.model"
 import dayjs from "dayjs";
 import axios from 'axios';
 
@@ -55,7 +55,7 @@ try {
   //console.log(allParisData)
   
   const mostPolluted : any = await ResultModel.findOne().sort({
-    "aquis": -1
+    "aqius": -1
   }).limit(1)
  
   const dateAndTime = mostPolluted.postedAt 
