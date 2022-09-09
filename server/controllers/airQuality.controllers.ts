@@ -23,7 +23,7 @@ return getAirQuality(lat,lon)
 //     //res.status(200).send(postAirQuaity(lat, lon))
 //  })
 
- router.get('/getDateTime', async (req:Request, res: Response)=>{
+ router.get('/getDateAndTime', async (req:Request, res: Response)=>{
     const date = await getDateAndTime()
       return  res.send(date)
  })
