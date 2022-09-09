@@ -1,18 +1,22 @@
 import { getModelForClass, modelOptions, prop } from "@typegoose/typegoose";
 
 
+
 export class Result {
 @prop({required: true})
-aqius: string;
+aqius: number;
 
 @prop({required: true})
 mainus: string
 
 @prop({required: true})
-aqicn: string
+aqicn: number
 
 @prop({required: true})
 maincn: string
+
+@prop({required:true})
+postedAt: string
 
 }
 
