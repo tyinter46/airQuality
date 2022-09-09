@@ -55,7 +55,7 @@ try {
   //console.log(allParisData)
   
   const mostPolluted : any = await ResultModel.findOne().sort({
-    "aquis": 1
+    "aquis": -1
   }).limit(1)
  
   const dateAndTime = mostPolluted.postedAt 
