@@ -3,7 +3,7 @@ import { getModelForClass, modelOptions, prop } from "@typegoose/typegoose";
 
 export class Result {
 @prop({required: true})
-aquis: string;
+aqius: string;
 
 @prop({required: true})
 mainus: string
@@ -16,5 +16,9 @@ maincn: string
 
 }
 
-const ResultModel = getModelForClass(Result)
+const ResultModel = getModelForClass(Result, {
+    schemaOptions: {
+        timestamps:true
+    }
+})
 export default ResultModel
