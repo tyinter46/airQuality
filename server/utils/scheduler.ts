@@ -4,8 +4,8 @@ import { postAirQuaity } from '../services/airQuality.services'
 export const postEveryMinute = ()=>{
 
 
-nodeCron.schedule('* * * * * *', ()=>{
-   // console.log('i am running every second')
+nodeCron.schedule('* * * * *', ()=>{
+   // console.log('i am running every minute')
    postAirQuaity()
 })
 }
